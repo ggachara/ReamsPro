@@ -1,29 +1,58 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
+import React from "react"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
+export default function Home({ data }) {
+  return (
+    <Layout>
+      <div className="text-center mt-2">
+        <Link className="text-center text-3xl font-semibold" to="/about">
+          ReamsPro Manual Home
+        </Link>
+        <h3 className="text-gray text-md">
+          Your Guide to grasping this barakoa
+        </h3>
+        <h4 className="text-gray">{data.allMdx.totalCount} Articles</h4>
+        <div className="grid grid-cols-4 gap-2 my-6 mx-2">
+          {data.allMdx.edges.map(({ node }) => (
+            <Link to={node.frontmatter.slug}>
+              <div
+                className="border border-1 border-gray-300 shadow-md border-opacity-50 h-28 text-center rounded-md pt-3"
+                key={node.id}
+              >
+                <div className="inline-block">
+                  <h3 className=" text-xl text-gray-700 font-semibold hover:text-2xl">
+                    {node.frontmatter.title}{" "}
+                  </h3>
+                  <h4 className=" text-base text-gray-500 font-medium pt-1 hover:text-sm">
+                    {node.frontmatter.description}{" "}
+                  </h4>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </Layout>
+  )
+}
 
-export default IndexPage
+export const query = graphql`
+  query {
+    allMdx {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            slug
+            description
+            date(formatString: "DD MMMM, YYYY")
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`

@@ -1,44 +1,41 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
+import React from "react"
+import { MDXProvider } from "@mdx-js/react"
+import Footer from "./footer"
 import Header from "./header"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+export default function Layout({ children }) {
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
-        <main className="h-full">{children}</main>
-        <footer className="mt-2 bg-gray-500">
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+    <MDXProvider
+      components={{
+        p: props => (
+          <p {...props} className="font-normal text-lg text-gray-600" />
+        ),
+        img: props => <img {...props} className="my-14" />,
+        // ul: props => <ul {...props} className="block" />,
+        // ol: props => <ol {...props} className="block" />,
+        li: props => <li {...props} className="block text-bold" />,
+        h1: props => (
+          <h1 {...props} className="text-3xl font-semibold text-gray-900" />
+        ),
+        h2: props => (
+          <h2
+            {...props}
+            className="text-2xl my-3 text-center font-semibold text-gray-900"
+          />
+        ),
+        h3: props => (
+          <h3
+            {...props}
+            className="text-2xl my-3 text-center font-semibold text-gray-900"
+          />
+        ),
+      }}
+    >
+      <div className="flex flex-col flex-wrap">
+        <Header />
+        {children}
+        <Footer className="inset-x-0 bottom-0" />
       </div>
-    </>
+    </MDXProvider>
   )
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
