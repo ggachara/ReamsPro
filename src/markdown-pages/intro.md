@@ -6,7 +6,7 @@ description: "INTRODUCTION TO THE REAMSPRO SYSTEM"
 ---
 
 
-# Overview of REAMSPRO
+## Overview of REAMSPRO
 
 **REAMSPRO** is a property management and administration system built for real estate firms and professionals to drive efficiency and effectiveness via proper record management and keeping.
 
@@ -16,13 +16,13 @@ It does this by modularizing the different levels of operations into features th
 
 The modules include but are not limited to:
 
-**1. Tenant Management**
-**2. Landlord Management.**
-**3. Billing and Invoicing.**
-**4. Rent and Payment Processing.**
-**5. Accounting.**
-**6. Reporting.**
-**7. Communication.**
++ **1. Tenant Management**
++ **2. Landlord Management.**
++ **3. Billing and Invoicing.**
++ **4. Rent and Payment Processing.**
++ **5. Accounting.**
++ **6. Reporting.**
++ **7. Communication.**
 
 In addition to these features, **`REAMSPRO`** is:
 

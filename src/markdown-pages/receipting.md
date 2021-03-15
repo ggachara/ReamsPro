@@ -12,7 +12,6 @@ From the left-hand side menu, there is a Receipting sub-menu which when clicked 
 + **Non-Tenant Receipt**.
 + **Receipt List**.
 
-//receipt sub menu and receipt image here
 ![Administration ](../images/receipt-submenu.png)
 
 
@@ -32,9 +31,7 @@ The third sub-menu is the Receipt List which lists all the captured receipts bot
 
 On each receipt there are a few controls which allow certain operations on that particular payment as shown in the figure below;
 
-//action menu image here
 ![Administration ](../images/receipt-action.png)
-
 
 The list of operations includes:
 
@@ -46,17 +43,16 @@ The list of operations includes:
 
 Among the controls in the Receipt List tab include:
 
-//receipt list tab here
+
 ![Administration ](../images/receipt-list.png)
 
-
-**1. Type**: Choose between Tenant and Non-Tenant receipts.
-**2. Limit Records**: Vary the range of receipt number.
-**3. Receipt New Receipt**: Capture a new Tenant Receipt.
-**4. Print Bulk Receipts**: Print multiple receipts per property.
-**5. Non-Tenant Receipt**: Capture a Non-Tenant Receipt.
-**6. Active Receipts**: List of Recorded Receipts.
-**7. Reversed Receipts**: List of Cancelled receipt payments.
-**8. Show Entries**: Vary number to display at a go.
-**9. Search**: Filter Receipt List with certain keywords.
-**10. Page Count**: Show Page Count of Receipt Lists.
++ **1. Receipt Type**: Choose between Tenant and Non-Tenant receipts.
++ **2. Limit Records**: Vary the range of receipt number.
++ **3. Receipt New Receipt**: Capture a new Tenant Receipt.
++ **4. Print Bulk Receipts**: Print multiple receipts per property.
++ **5. Non-Tenant Receipt**: Capture a Non-Tenant Receipt.
++ **6. Active Receipts**: List of Recorded Receipts.
++ **7. Reversed Receipts**: List of Cancelled receipt payments.
++ **8. Show Entries**: Vary number to display at a go.
++ **9. Search**: Filter Receipt List with certain keywords.
++ **10. Page Count**: Show Page Count of Receipt Lists.

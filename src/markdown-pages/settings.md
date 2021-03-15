@@ -13,19 +13,19 @@ The settings side menu is found on the menu right under the Dashboard option and
 
 The settings menu comes with it:
 
-**1. Access Rights**: Holds all the user rights controls.
-**2. System Users**: Displays a list of all system users.
-**3. Company Profile**: Allows creation of company profile.
-**4. Invoice Categories**: Allows creation of invoice types.
-**5. Final Expense Categories**: Creation of invoices for final expense receipting.
-**6. Expense Categories**: Creation of payment expenses.
-**7. Landlords/Clients**: Allows capture and management of landlord details.
-**8. Building**: Allows capture and management of building details.
-**9. Units**: Allows creation and management of units.
++ **1. Access Rights**: Holds all the user rights controls.
++ **2. System Users**: Displays a list of all system users.
++ **3. Company Profile**: Allows creation of company profile.
++ **4. Invoice Categories**: Allows creation of invoice types.
++ **5. Final Expense Categories**: Creation of invoices for final expense receipting.
++ **6. Expense Categories**: Creation of payment expenses.
++ **7. Landlords/Clients**: Allows capture and management of landlord details.
++ **8. Building**: Allows capture and management of building details.
++ **9. Units**: Allows creation and management of units.
 
 ----
 
-## `Access Rights`
+## Access Rights
 
 For every user group there is a bundle of rights allowed to them by the system as per the administrator’s allowance. They can either be add, edit, delete, reverse, or print rights.
 
@@ -33,8 +33,10 @@ User groups include but are not limited to Administrators, Accountants, Cashier,
 
 Below are some open tabs of Access Rights:
 
-//Open Tab images here.
 ![Administration ](../images/user-groups.png)
+
+----
+
 ![Administration ](../images/rights.png)
 
 
@@ -50,7 +52,6 @@ Name, Email, Group, Status, Password are among the details that need to be captu
 
 The password should be ‘strong’ enough but also easy enough for the user to remember.
 
-// Images Here.
 ![Administration ](../images/user-list.png)
 
 ----
@@ -72,15 +73,14 @@ The invoice categories tab allows for creation of the different invoice types.
 
 The number and type of invoice categories depends on company policy and can be as many and varying as possible and are added by clicking on the Add New Category as shown below:
 
-// invoice categories here.
+
 ![Administration ](../images/invoice-category.png)
 
 
 The invoices themselves have certain properties that should be set on creation to control the recording and allocation of payments for accounting purposes, whether they are commissionable, payable, vatable, refundable and their status as shown below:
 
-//invoice categories pic here.
-![Administration ](../images/invoice-details.png)
 
+![Administration ](../images/invoice-details.png)
 
 ----
 
@@ -93,9 +93,7 @@ Invoices specific to tenant vacation payments are created from here and like the
 The details needed to capture the specific final expense are few but equally important as all others.
 A list of expense categories to be used appears in the Final Expense tab as shown below:
 
-//vacating expenses list.
 ![Administration ](../images/vacating-expenses-list.png)
-
 
 ----
 
@@ -104,10 +102,9 @@ A list of expense categories to be used appears in the Final Expense tab as show
 Expense type specific to a landlord’s property or the office are created and managed from the Expense Categories tab.  
 The Add New Category button allows for creation of new expense categories after filling the expense type in expense details window.
 
-//expense list and new expense creation tab image
 ![Administration ](../images/expenses-list.png)
-![Administration ](../images/new-expense-capture.png)
 
+![Administration ](../images/new-expense-capture.png)
 
 ----
 
@@ -121,10 +118,9 @@ On capture of details, each landlord gets their own unique File No# which is ass
 On deactivation of landlord accounts, their details and info are saved in the Inactive details tab indicated (2) below.
 The search option indicated (3) below helps when sifting via the landlords list with keywords.
 
-// landlord/client list image here and creation dialog here.
 ![Administration ](../images/landlord-capture.png)
-![Administration ](../images/landlord-list.png)
 
+![Administration ](../images/landlord-list.png)
 
 ----
 
@@ -135,15 +131,11 @@ Buildings too have certain details unique to them that you need to capture when 
 
 The default building tab displays the list of building under management with some of their details.
 
-// Building list image here.
 ![Administration ](../images/building-list.png)
-
 
 On clicking the Add New Building shown above a details tab is displayed where all the details adding to the building’s uniqueness are captured like the one below.
 
-//Creation dialog image here.
 ![Administration ](../images/building-capture.png)
-
 
 The building name, category which is either residential or commercial and the respective landlord are among the key details to capture.
 
@@ -159,18 +151,16 @@ In this step we generate the units of the particular property as they are physic
 
 There is no limit to the number of units that can be generated to accommodate the tenants in a property.
 
-//unit list image here
 ![Administration ](../images/unit-list.png)
-
 
 The Unit List tab also comes with navigation cues namely:
 
-**1. Generate New Units**: The generate unit prompt is displayed on clicking.
-**2. Search Field**: Allows filter of search results with custom key words.
-**3. Page Count**: Shows the number of pages of the results.
-**4. Vacant Units**: Shows the list of vacant units across the properties.
-**5. Occupied Units**: Shows the list of occupied units across the properties.
-**6. Action button**: Allows the remove/delete option of the unit list.
++ **1. Generate New Units**: The generate unit prompt is displayed on clicking.
++ **2. Search Field**: Allows filter of search results with custom key words.
++ **3. Page Count**: Shows the number of pages of the results.
++ **4. Vacant Units**: Shows the list of vacant units across the properties.
++ **5. Occupied Units**: Shows the list of occupied units across the properties.
++ **6. Action button**: Allows the remove/delete option of the unit list.
 
 On clicking the Generate New Units button, a prompt to generate units is displayed.
 
